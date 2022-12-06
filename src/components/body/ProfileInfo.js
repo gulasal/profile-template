@@ -5,7 +5,7 @@ import { FaCog } from "react-icons/fa";
 const ProfileInfoWrapper = styled.div`
   padding: 0 1rem 0 8rem;
 
-  & .first {
+  & .first{
     display: flex;
     align-items: center;
   }
@@ -42,7 +42,7 @@ const ProfileInfoWrapper = styled.div`
     font-weight: 500;
   }
   & .padding_rightSide{
-    padding-left: 1rem;
+    padding-left: 0.8rem;
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 1rem;
