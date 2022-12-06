@@ -1,74 +1,90 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FaCog } from "react-icons/fa"
-
+import React from "react";
+import styled from "styled-components";
+import { FaCog } from "react-icons/fa";
 
 const ProfileInfoWrapper = styled.div`
-    padding: 0 1rem 0 8rem ;
+  padding: 0 1rem 0 8rem;
 
-& .first {
+  & .first {
     display: flex;
     align-items: center;
+  }
 
-    
-}
-
-& .name{
+  & .name {
     font-size: 1.5rem;
     font-weight: 100;
     padding-right: 0.5rem;
-}
+  }
 
-& .btn{
+  & .btn {
     width: 10rem;
     height: 1.5rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 1px solid lightgray;
     border-radius: 3px;
     color: gray;
     margin-right: 0.5rem;
-   
-}
-& span{
+  }
+  & span {
     margin-right: 0.5rem;
-    padding: 1rem ;
+    padding: 0 1rem;
     font-size: 1rem;
     font-weight: 300;
-   
-}
+  }
 
-& .third{
+  & .third {
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 0.2rem;
     padding: 1rem;
-}
-& .fullname{
+  }
+  & .fullname {
     font-weight: 500;
-}
-    
-
-`
+  }
+  & .padding_rightSide{
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1rem;
+  } 
+  & .first_row{
+    font-weight: 500;
+    padding-right: 0.5rem;
+  }
+`;
 
 const ProfileInfo = () => {
   return (
     <ProfileInfoWrapper>
-        <div className='first'>
-            <span className='name'>aishahabib</span>
-            <button className='btn'>Profile bearbeiten</button>
-            <FaCog className='icon'/>
-        </div>
-        <div className='second'>
-            <span><strong>17</strong> beitrage</span>
-            <span><strong>43</strong>follower</span>
-            <span><strong>447</strong> abonniert</span>
-        </div>
-        <div className='third'>
-            <p className='fullname'>Aisha Habib</p>
-            <p className='address'>Regensburg, SoftwareEngineer, Waterpoloplayer</p>
-        </div>
+      <div className="first">
+        <span className="name">aishahabib</span>
+        <button className="btn">Profile bearbeiten</button>
+        <FaCog className="icon" />
+      </div>
+      <div className="third">
+        <p className="fullname">Aisha Habib</p>
+        <p className="address">Regensburg, SoftwareEngineer, Waterpoloplayer</p>
+      </div>
+      <div>
+        <table  className="padding_rightSide">
+          <tbody>
+            <tr >
+              <td className="first_row">Rolle:</td>
+              <td>Maschinenfuhrer</td>
+            </tr>
+            <tr>
+              <td className="first_row">Abteilung:</td>
+              <td>CNC Frasen</td>
+            </tr>
+            <tr>
+              <td className="first_row">Fertigkeiten:</td>
+              <td>Frasen, Programmieren</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </ProfileInfoWrapper>
-  )
-}
+  );
+};
 
-export default ProfileInfo
+export default ProfileInfo;
