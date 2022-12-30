@@ -86,7 +86,7 @@ const ProfileInfo = () => {
           </tbody>
         </table>
       </div>
-      <form action="/action_page.php" style={{display: 'none'}}>
+      <form  style={{display: 'none'}}>
         <div className="fullname">
           <label for="fname">Fullname:</label>
           <input type="text" id="fname" name="fname" value="John"/>
