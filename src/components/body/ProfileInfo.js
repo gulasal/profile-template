@@ -52,13 +52,16 @@ const ProfileInfoWrapper = styled.div`
     padding-right: 0.5rem;
   }
 `;
+const onClickhandler = () => {
+  return 
+}
 
 const ProfileInfo = () => {
   return (
     <ProfileInfoWrapper>
       <div className="first">
         <span className="name">aishahabib</span>
-        <button className="btn">Profile bearbeiten</button>
+        <button className="btn" onClick={onClickhandler}>Profile bearbeiten</button>
         <FaCog className="icon" />
       </div>
       <div className="third">
@@ -83,6 +86,38 @@ const ProfileInfo = () => {
           </tbody>
         </table>
       </div>
+      <form action="/action_page.php" style={{display: 'none'}}>
+        <div className="fullname">
+          <label for="fname">Fullname:</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">City</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">Profession</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">Hobby</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">Rolle</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">Abteilung</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <div>
+          <label for="fname">Fertigkeiten</label>
+          <input type="text" id="fname" name="fname" value="John"/>
+        </div>
+        <input type="submit" value="Submit"/>
+      </form> 
+      
     </ProfileInfoWrapper>
   );
 };
