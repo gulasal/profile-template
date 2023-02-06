@@ -51,6 +51,38 @@ const ProfileInfoWrapper = styled.div`
     font-weight: 500;
     padding-right: 0.5rem;
   }
+  form {
+    width: 20rem;
+    height: 18rem;
+    border: 1px solid grey;
+    padding: 2rem;
+  }
+  .label_input_style {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+  }
+  label {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: red;
+  }
+  input {
+    width: 14rem;
+    height: 1.5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .submit {
+    display: flex;
+
+    text-align: center;
+    width: 4rem;
+    height: 1 rem;
+    border: 1px solid #000728;
+  }
 `;
 
 // const onClickhandler = () => {
@@ -115,15 +147,15 @@ const ProfileInfo = () => {
         id="editForm"
         style={profile ? { display: "none" } : { display: "block" }}
       >
-        <div className="fullname">
+        <div className="fullname label_input_style">
           <label htmlFor="fname">Fullname:</label>
           <input type="text" id="fname" name="fname" defaultValue="" />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="city">City</label>
           <input type="text" id="city" name="city" defaultValue="" />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="profession">Profession</label>
           <input
             type="text"
@@ -132,19 +164,19 @@ const ProfileInfo = () => {
             defaultValue=""
           />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="hobby">Hobby</label>
           <input type="text" id="hobby" name="hobby" defaultValue="" />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="rolle">Rolle</label>
           <input type="text" id="rolle" name="rolle" defaultValue="" />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="abteilung">Abteilung</label>
           <input type="text" id="abteilung" name="abteilung" defaultValue="" />
         </div>
-        <div>
+        <div className="label_input_style">
           <label htmlFor="fertigkeiten">Fertigkeiten</label>
           <input
             type="text"
@@ -154,6 +186,7 @@ const ProfileInfo = () => {
           />
         </div>
         <input
+          className="submit"
           type="submit"
           value="Submit"
           onClick={(e) => {
