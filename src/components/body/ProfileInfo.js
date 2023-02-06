@@ -54,7 +54,6 @@ const ProfileInfoWrapper = styled.div`
   form {
     width: 20rem;
     height: 18rem;
-    border: 1px solid grey;
     padding: 2rem;
   }
   .label_input_style {
@@ -66,7 +65,7 @@ const ProfileInfoWrapper = styled.div`
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     font-size: 0.9rem;
-    color: red;
+    
   }
   input {
     width: 14rem;
